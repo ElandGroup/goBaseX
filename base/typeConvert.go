@@ -23,7 +23,7 @@ func ConvertBase() {
 
 	*/
 
-	fmt.Println("======Convert Base=======")
+	fmt.Println("======2.Convert Base=======")
 	//1. convert to string
 	fmt.Println(strconv.FormatBool(true))
 	var dollar int64 = 20
@@ -63,7 +63,7 @@ func ConvertCollection() {
 	   interface
 	*/
 
-	fmt.Println("======Convert Collection=======")
+	fmt.Println("======3.Convert Collection=======")
 	//1.slice,map to json
 
 	//slice
@@ -94,7 +94,7 @@ func ConvertFromObject() {
 	*/
 
 	//1.object
-	fmt.Println("======Convert Object to Collection=======")
+	fmt.Println("======4.Convert Object to Collection=======")
 	fruit := Fruit{Name: "apple", Color: "red"}
 	fruitByte, _ := json.Marshal(&fruit)
 	fmt.Println(string(fruitByte))
@@ -113,7 +113,7 @@ func ConvertFromObject() {
 }
 
 func ConvertToObject() {
-	fmt.Println("======Convert  Collection to Object=======")
+	fmt.Println("======5.Convert  Collection to Object=======")
 	//1.json to object
 	fruitSlice := `{"name":"apple","color":"red","price":0}`
 	fruit := Fruit{}

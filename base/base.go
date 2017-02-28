@@ -4,6 +4,8 @@ import "fmt"
 import "time"
 
 func Base() {
+
+	fmt.Println("======1.base=======")
 	//1.define variable
 	var name string
 	name = "ni hao"
